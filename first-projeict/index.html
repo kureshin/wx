@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电商首页</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.slideBox.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slideBox.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="top">
+				<img src="images/star.png" />
+				<span class="top_span1" id="save_wance">收藏咸鱼</span>
+				<div class="top_R">
+					<span class="top_span2">欢迎来到咸鱼网！</span>
+					<p id="top_msg">
+						<span class="top_link"><strong>[</strong><a href="#">登录</a><strong>]</span>
+						<span class="top_link"><strong>[</strong><a href="#">免费注册</a><strong>]</strong></span>
+					</p>
+				</div>
+			</div>
+			<!--header top end-->
+			<div class="content">
+				<div class="contentBox">
+					<img src="images/logo.png"  class="logo"/>
+					<form name="topform" id="topform" class="topform">
+						<input type="text" name="searchText" class="searchText" id="searchText" />
+						<input type="submit" class="search" id="search" value="搜索" />
+					</form>
+					<div class="cartbox">
+						<a href="#">
+							<img src="images/cart.png" class="cart" />
+							<span class="cart_name">购物车</span>
+						</a>
+						<span class="arrowbox">
+							<strong id="cartNum" class="cartNum">0</strong>
+							<img src="images/arrows.png" class="arrow" />
+						</span>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<!--header content end-->
+		</div>
+		<!--header end-->
+		<div id="nav">
+			<div class="top">
+				<div class="topBox">
+					<ul>
+						<li class="li1"><a href="#"><span class="li_span1">全部商品分类
+							<img src="images/arrows_bottom.png" /></span></a>
+							<div class="nav_box">
+								<div class="nav_content" id="nav_content">
+									<p class="nav_p1">
+										<span><a href="#">手机</a></span>
+										<span><a href="#">数码</a></span>
+										<span><a href="#">合约机</a></span>
+										<img src="images/arrows_R.png" class="arrows_R"/>
+									</p>
+									<p class="nav_p2" >
+										<span class="nav_p2_span1"><a href="#">荣耀3c</a></span>
+										<span><a href="#">单反</a></span>
+										<span><a href="#">智能设备</a></span>
+									</p>
+								</div>
+								<div class="nav_content" id="nav_content">
+									<p class="nav_p1">
+										<span><a href="#">电脑</a></span>
+										<span><a href="#">硬件外设</a></span>
+										<span><a href="#">装机宝</a></span>
+										<img src="images/arrows_R.png" class="arrows_R2"/>
+									</p>
+									<p class="nav_p2">
+										<span class="nav_p2_span1"><a href="#">笔记本</a></span>
+										<span><a href="#">超极本</a></span>
+										<span><a href="#">台式机</a></span>
+										<span><a href="#">平板</a></span>
+									</p>
+								</div>
+								<div class="nav_content" id="nav_content">
+									<p class="nav_p1">
+										<span><a href="#">大家电</a></span>
+										<span style="margin-left: 15px;"><a href="#">小家电</a></span>
+										<img src="images/arrows_R.png" class="arrows_R2" style="padding-left: 50px;"/>
+									</p>
+									<p class="nav_p2">
+										<span class="nav_p2_span1"><a href="#">电视</a></span>
+										<span><a href="#">空调</a></span>
+										<span><a href="#">冰箱</a></span>
+										<span><a href="#">洗衣机</a></span>
+									</p>
+								</div>
+								<div class="nav_content" id="nav_content">
+									<p class="nav_p1">
+										<span><a href="#">厨房电器</a></span>
+										<span style="margin-left: 15px;"><a href="#">生活电器</a></span>
+										<img src="images/arrows_R.png" class="arrows_R2" style="padding-left: 17px;"/>
+									</p>
+									<p class="nav_p2">
+										<span class="nav_p2_span1"><a href="#">空气净化器</a></span>
+										<span><a href="#">微波炉</a></span>
+										<span><a href="#">取暖设备</a></span>
+									</p>
+								</div>
+								<div class="nav_content" style="border: 0;" id="nav_content">
+									<p class="nav_p1">
+										<span><a href="#">食品</a></span>
+										<span><a href="#">饮料</a></span>
+										<span><a href="#">生鲜</a></span>
+										<span><a href="#">粮油</a></span>
+										<img src="images/arrows_R.png" class="arrows_R2" style="padding-left: 17px;"/>
+									</p>
+									<p class="nav_p2">
+										<span class="nav_p2_span1"><a href="#">进口</a></span>
+										<span><a href="#">方便面</a></span>
+										<span><a href="#">零食</a></span>
+										<span><a href="#">保健</a></span>
+									</p>
+								</div>
+								<div class="content_box">
+								<div class="inside_content">
+									<p><span class="span1">电脑整机</span>   
+										<a href="#" class="a1">笔记本 </a>  
+										<a href="#">超极本  </a>
+										<a href="#">上网本 </a> 
+										<a href="#">平板电脑  </a>
+										<a href="#">台式机</a>
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">装机配件 </span>  
+									<a href="#" class="a1">CPU1</a>  
+									<a href="#">硬盘  </a> 
+									<a href="#">SSD固态硬盘  </a> 
+									<a href="#">内存  </a> 
+									<a href="#">显示  </a> 
+									<a href="#">器智能显示器  </a> 
+									<a href="#">主板  </a> 
+									<a href="#">显卡  </a>  
+									<a href="#">机箱  </a> 
+									<a href="#">电源  </a> 
+									</p>
+									<p>
+										 <a href="#" class="a2">散热器</a>  
+										 <a href="#"> 刻录机/光驱 </a>  
+										 <a href="#"> 声卡  </a> 
+										 <a href="#"> 拓展卡</a>   
+										 <a href="#"> 服务器配件 </a>  
+										 <a href="#"> DIY小附件  </a> 
+										 <a href="#">装机/配件安装</a> 
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">整机附件 </span>  
+										<a href="#" class="a1">电脑包 </a>  
+										<a href="#">电脑桌  </a> 
+										<a href="#">电池  </a> 
+										<a href="#">电源适配器  </a> 
+										<a href="#">贴膜  </a> 
+										<a href="#">清洁用品  </a> 
+										<a href="#">笔记本散热器 </a> 
+										<a href="#">USB拓展  </a>  
+									</p>
+									<p>
+										 <a href="#" class="a2">平板配件</a>  
+										 <a href="#"> 特色附件 </a>  
+										 <a href="#"> 插座网线/电话线  </a> 
+										 <a href="#"> 影音线材</a>   
+										 <a href="#"> 电脑线材 </a>  
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">电脑外设 </span>  
+										<a href="#" class="a1">鼠标 </a>  
+										<a href="#">键盘  </a> 
+										<a href="#">游戏外设  </a> 
+										<a href="#">移动硬盘   </a> 
+										<a href="#">摄像头  </a> 
+										<a href="#">高清播放器  </a> 
+										<a href="#">外置盒  </a> 
+										<a href="#">移动硬盘包  </a>  
+										</p>
+									<p>
+									 	<a href="#" class="a2">手写板/绘图板</a>  
+									</p>
+								</div>
+								<div class="inside_content">
+									<p><span class="span1">网络设备</span>   
+										<a href="#" class="a1">路由器 </a>  
+										<a href="#">网卡  </a>
+										<a href="#">3G无线上网  </a> 
+										<a href="#">网络存储  </a>
+										<a href="#">布线工具</a>
+										<a href="#">正版软件</a>
+									</p>
+								</div>
+								<div class="inside_content" style="border: none;">
+									<p><span class="span1">音频设备 </span>   
+										<a href="#" class="a1"> 音箱  </a>  
+										<a href="#">耳机/耳麦  </a>
+										<a href="#">麦克风  </a> 
+										<a href="#">声卡  </a>
+										<a href="#">音频附件</a>
+										<a href="#">录音笔</a>
+									</p>
+								</div>
+								<div class="inside_content">
+									<a href="#"><span class="span2 left">电脑整机频道
+										<img src="images/arrows_R.png" style="vertical-align: middle;" />
+									</span></a>
+									<a href="#"><span class="span2">硬件/外设频道
+										<img src="images/arrows_R.png" style="vertical-align: middle;" />
+									</span></a>
+								</div>
+							</div>
+							<div class="content_box hidden">
+								<div class="inside_content">
+									<p><span class="span1">电脑整机</span>   
+										<a href="#" class="a1">笔记本 </a>  
+										<a href="#">超极本  </a>
+										<a href="#">上网本 </a> 
+										<a href="#">平板电脑  </a>
+										<a href="#">台式机</a>
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">装机配件 </span>  
+										<a href="#" class="a1">CPU2 </a>  
+										<a href="#">硬盘  </a> 
+										<a href="#">SSD固态硬盘  </a> 
+										<a href="#">内存  </a> 
+										<a href="#">显示  </a> 
+										<a href="#">器智能显示器  </a> 
+										<a href="#">主板  </a> 
+										<a href="#">显卡  </a>  
+										<a href="#">机箱  </a> 
+										<a href="#">电源  </a> 
+									</p>
+									<p>
+										 <a href="#" class="a2">散热器</a>  
+										 <a href="#"> 刻录机/光驱 </a>  
+										 <a href="#"> 声卡  </a> 
+										 <a href="#"> 拓展卡</a>   
+										 <a href="#"> 服务器配件 </a>  
+										 <a href="#"> DIY小附件  </a> 
+										 <a href="#">装机/配件安装</a> 
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">整机附件 </span>  
+										<a href="#" class="a1">电脑包 </a>  
+										<a href="#">电脑桌  </a> 
+										<a href="#">电池  </a> 
+										<a href="#">电源适配器  </a> 
+										<a href="#">贴膜  </a> 
+										<a href="#">清洁用品  </a> 
+										<a href="#">笔记本散热器 </a> 
+										<a href="#">USB拓展  </a>  
+									</p>
+									<p>
+										 <a href="#" class="a2">平板配件</a>  
+										 <a href="#"> 特色附件 </a>  
+										 <a href="#"> 插座网线/电话线  </a> 
+										 <a href="#"> 影音线材</a>   
+										 <a href="#"> 电脑线材 </a>  
+									</p>
+								</div>
+								<div class="inside_content2">
+									<p><span class="span1">电脑外设 </span>  
+										<a href="#" class="a1">鼠标 </a>  
+										<a href="#">键盘  </a> 
+										<a href="#">游戏外设  </a> 
+										<a href="#">移动硬盘   </a> 
+										<a href="#">摄像头  </a> 
+										<a href="#">高清播放器  </a> 
+										<a href="#">外置盒  </a> 
+										<a href="#">移动硬盘包  </a>  
+										</p>
+									<p>
+										 <a href="#" class="a2">手写板/绘图板</a>  
+									</p>
+								</div>
+								<div class="inside_content">
+									<p><span class="span1">网络设备</span>   
+										<a href="#" class="a1">路由器 </a>  
+										<a href="#">网卡  </a>
+										<a href="#">3G无线上网  </a> 
+										<a href="#">网络存储  </a>
+										<a href="#">布线工具</a>
+										<a href="#">正版软件</a>
+									</p>
+								</div>
+								<div class="inside_content" style="border: none;">
+									<p><span class="span1">音频设备 </span>   
+										<a href="#" class="a1"> 音箱  </a>  
+										<a href="#">耳机/耳麦  </a>
+										<a href="#">麦克风  </a> 
+										<a href="#">声卡  </a>
+										<a href="#">音频附件</a>
+										<a href="#">录音笔</a>
+									</p>
+								</div>
+								<div class="inside_content">
+									<a href="#"><span class="span2 left">电脑整机频道
+										<img src="images/arrows_R.png" style="vertical-align: middle;" />
+									</span></a>
+									<a href="#"><span class="span2">硬件/外设频道
+										<img src="images/arrows_R.png" style="vertical-align: middle;" />
+									</span></a>
+								</div>
+							</div>
+							<div class="content_box hidden">
+							<div class="inside_content">
+								<p><span class="span1">电脑整机</span>   
+									<a href="#" class="a1">笔记本 </a>  
+									<a href="#">超极本  </a>
+									<a href="#">上网本 </a> 
+									<a href="#">平板电脑  </a>
+									<a href="#">台式机</a>
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">装机配件 </span>  
+									<a href="#" class="a1">CPU3 </a>  
+									<a href="#">硬盘  </a> 
+									<a href="#">SSD固态硬盘  </a> 
+									<a href="#">内存  </a> 
+									<a href="#">显示  </a> 
+									<a href="#">器智能显示器  </a> 
+									<a href="#">主板  </a> 
+									<a href="#">显卡  </a>  
+									<a href="#">机箱  </a> 
+									<a href="#">电源  </a> 
+								</p>
+								<p>
+									 <a href="#" class="a2">散热器</a>  
+									 <a href="#"> 刻录机/光驱 </a>  
+									 <a href="#"> 声卡  </a> 
+									 <a href="#"> 拓展卡</a>   
+									 <a href="#"> 服务器配件 </a>  
+									 <a href="#"> DIY小附件  </a> 
+									 <a href="#">装机/配件安装</a> 
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">整机附件 </span>  
+									<a href="#" class="a1">电脑包 </a>  
+									<a href="#">电脑桌  </a> 
+									<a href="#">电池  </a> 
+									<a href="#">电源适配器  </a> 
+									<a href="#">贴膜  </a> 
+									<a href="#">清洁用品  </a> 
+									<a href="#">笔记本散热器 </a> 
+									<a href="#">USB拓展  </a>  
+								</p>
+								<p>
+									 <a href="#" class="a2">平板配件</a>  
+									 <a href="#"> 特色附件 </a>  
+									 <a href="#"> 插座网线/电话线  </a> 
+									 <a href="#"> 影音线材</a>   
+									 <a href="#"> 电脑线材 </a>  
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">电脑外设 </span>  
+									<a href="#" class="a1">鼠标 </a>  
+									<a href="#">键盘  </a> 
+									<a href="#">游戏外设  </a> 
+									<a href="#">移动硬盘   </a> 
+									<a href="#">摄像头  </a> 
+									<a href="#">高清播放器  </a> 
+									<a href="#">外置盒  </a> 
+									<a href="#">移动硬盘包  </a>  
+									</p>
+								<p>
+									 <a href="#" class="a2">手写板/绘图板</a>  
+								</p>
+							</div>
+							<div class="inside_content">
+								<p><span class="span1">网络设备</span>   
+									<a href="#" class="a1">路由器 </a>  
+									<a href="#">网卡  </a>
+									<a href="#">3G无线上网  </a> 
+									<a href="#">网络存储  </a>
+									<a href="#">布线工具</a>
+									<a href="#">正版软件</a>
+								</p>
+							</div>
+							<div class="inside_content" style="border: none;">
+								<p><span class="span1">音频设备 </span>   
+									<a href="#" class="a1"> 音箱  </a>  
+									<a href="#">耳机/耳麦  </a>
+									<a href="#">麦克风  </a> 
+									<a href="#">声卡  </a>
+									<a href="#">音频附件</a>
+									<a href="#">录音笔</a>
+								</p>
+							</div>
+							<div class="inside_content">
+								<a href="#"><span class="span2 left">电脑整机频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+								<a href="#"><span class="span2">硬件/外设频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+							</div>
+						</div>
+						<div class="content_box hidden">
+							<div class="inside_content">
+								<p><span class="span1">电脑整机</span>   
+									<a href="#" class="a1">笔记本 </a>  
+									<a href="#">超极本  </a>
+									<a href="#">上网本 </a> 
+									<a href="#">平板电脑  </a>
+									<a href="#">台式机</a>
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">装机配件 </span>  
+									<a href="#" class="a1">CPU4 </a>  
+									<a href="#">硬盘  </a> 
+									<a href="#">SSD固态硬盘  </a> 
+									<a href="#">内存  </a> 
+									<a href="#">显示  </a> 
+									<a href="#">器智能显示器  </a> 
+									<a href="#">主板  </a> 
+									<a href="#">显卡  </a>  
+									<a href="#">机箱  </a> 
+									<a href="#">电源  </a> 
+								</p>
+								<p>
+									 <a href="#" class="a2">散热器</a>  
+									 <a href="#"> 刻录机/光驱 </a>  
+									 <a href="#"> 声卡  </a> 
+									 <a href="#"> 拓展卡</a>   
+									 <a href="#"> 服务器配件 </a>  
+									 <a href="#"> DIY小附件  </a> 
+									 <a href="#">装机/配件安装</a> 
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">整机附件 </span>  
+									<a href="#" class="a1">电脑包 </a>  
+									<a href="#">电脑桌  </a> 
+									<a href="#">电池  </a> 
+									<a href="#">电源适配器  </a> 
+									<a href="#">贴膜  </a> 
+									<a href="#">清洁用品  </a> 
+									<a href="#">笔记本散热器 </a> 
+									<a href="#">USB拓展  </a>  
+								</p>
+								<p>
+									 <a href="#" class="a2">平板配件</a>  
+									 <a href="#"> 特色附件 </a>  
+									 <a href="#"> 插座网线/电话线  </a> 
+									 <a href="#"> 影音线材</a>   
+									 <a href="#"> 电脑线材 </a>  
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">电脑外设 </span>  
+									<a href="#" class="a1">鼠标 </a>  
+									<a href="#">键盘  </a> 
+									<a href="#">游戏外设  </a> 
+									<a href="#">移动硬盘   </a> 
+									<a href="#">摄像头  </a> 
+									<a href="#">高清播放器  </a> 
+									<a href="#">外置盒  </a> 
+									<a href="#">移动硬盘包  </a>  
+									</p>
+								<p>
+									 <a href="#" class="a2">手写板/绘图板</a>  
+								</p>
+							</div>
+							<div class="inside_content">
+								<p><span class="span1">网络设备</span>   
+									<a href="#" class="a1">路由器 </a>  
+									<a href="#">网卡  </a>
+									<a href="#">3G无线上网  </a> 
+									<a href="#">网络存储  </a>
+									<a href="#">布线工具</a>
+									<a href="#">正版软件</a>
+								</p>
+							</div>
+							<div class="inside_content" style="border: none;">
+								<p><span class="span1">音频设备 </span>   
+									<a href="#" class="a1"> 音箱  </a>  
+									<a href="#">耳机/耳麦  </a>
+									<a href="#">麦克风  </a> 
+									<a href="#">声卡  </a>
+									<a href="#">音频附件</a>
+									<a href="#">录音笔</a>
+								</p>
+							</div>
+							<div class="inside_content">
+								<a href="#"><span class="span2 left">电脑整机频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+								<a href="#"><span class="span2">硬件/外设频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+							</div>
+						</div>
+						<div class="content_box ">
+							<div class="inside_content">
+								<p><span class="span1">电脑整机</span>   
+									<a href="#" class="a1">笔记本 </a>  
+									<a href="#">超极本  </a>
+									<a href="#">上网本 </a> 
+									<a href="#">平板电脑  </a>
+									<a href="#">台式机</a>
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">装机配件 </span>  
+									<a href="#" class="a1">CPU5 </a>  
+									<a href="#">硬盘  </a> 
+									<a href="#">SSD固态硬盘  </a> 
+									<a href="#">内存  </a> 
+									<a href="#">显示  </a> 
+									<a href="#">器智能显示器  </a> 
+									<a href="#">主板  </a> 
+									<a href="#">显卡  </a>  
+									<a href="#">机箱  </a> 
+									<a href="#">电源  </a> 
+								</p>
+								<p>
+									 <a href="#" class="a2">散热器</a>  
+									 <a href="#"> 刻录机/光驱 </a>  
+									 <a href="#"> 声卡  </a> 
+									 <a href="#"> 拓展卡</a>   
+									 <a href="#"> 服务器配件 </a>  
+									 <a href="#"> DIY小附件  </a> 
+									 <a href="#">装机/配件安装</a> 
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">整机附件 </span>  
+									<a href="#" class="a1">电脑包 </a>  
+									<a href="#">电脑桌  </a> 
+									<a href="#">电池  </a> 
+									<a href="#">电源适配器  </a> 
+									<a href="#">贴膜  </a> 
+									<a href="#">清洁用品  </a> 
+									<a href="#">笔记本散热器 </a> 
+									<a href="#">USB拓展  </a>  
+								</p>
+								<p>
+									 <a href="#" class="a2">平板配件</a>  
+									 <a href="#"> 特色附件 </a>  
+									 <a href="#"> 插座网线/电话线  </a> 
+									 <a href="#"> 影音线材</a>   
+									 <a href="#"> 电脑线材 </a>  
+								</p>
+							</div>
+							<div class="inside_content2">
+								<p><span class="span1">电脑外设 </span>  
+									<a href="#" class="a1">鼠标 </a>  
+									<a href="#">键盘  </a> 
+									<a href="#">游戏外设  </a> 
+									<a href="#">移动硬盘   </a> 
+									<a href="#">摄像头  </a> 
+									<a href="#">高清播放器  </a> 
+									<a href="#">外置盒  </a> 
+									<a href="#">移动硬盘包  </a>  
+									</p>
+								<p>
+									 <a href="#" class="a2">手写板/绘图板</a>  
+								</p>
+							</div>
+							<div class="inside_content">
+								<p><span class="span1">网络设备</span>   
+									<a href="#" class="a1">路由器 </a>  
+									<a href="#">网卡  </a>
+									<a href="#">3G无线上网  </a> 
+									<a href="#">网络存储  </a>
+									<a href="#">布线工具</a>
+									<a href="#">正版软件</a>
+								</p>
+							</div>
+							<div class="inside_content" style="border: none;">
+								<p><span class="span1">音频设备 </span>   
+									<a href="#" class="a1"> 音箱  </a>  
+									<a href="#">耳机/耳麦  </a>
+									<a href="#">麦克风  </a> 
+									<a href="#">声卡  </a>
+									<a href="#">音频附件</a>
+									<a href="#">录音笔</a>
+								</p>
+							</div>
+							<div class="inside_content">
+								<a href="#"><span class="span2 left">电脑整机频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+								<a href="#"><span class="span2">硬件/外设频道
+									<img src="images/arrows_R.png" style="vertical-align: middle;" />
+								</span></a>
+							</div>
+						</div>
+							</li>
+							<li class="li2"><a href="../productCategory/html/Category.html">数码城</a></li>
+							<li class="li2"><a href="#">天黑黑</a></li>
+							<li class="li2"><a href="#">团购</a></li>
+							<li class="li2"><a href="#">发现</a></li>
+							<li class="li2"><a href="#">二手特卖</a></li>
+							<li class="li2"><a href="#">名品会</a></li>
+						</ul>
+						<div class="slideBox" id="slideBox">
+							<ul class="items">
+								<li><a href="#"><img src="images/lunbo.jpg" style="width: 1000px; height: 325px;" /></a></li>
+								<li><a href="#"><img src="images/banner1.jpg" /></a></li>
+								<li><a href="#"><img src="images/banner2.jpg" /></a></li>
+								<li><a href="#"><img src="images/banner3.jpg" /></a></li>
+								<li><a href="#"><img src="images/banner4.jpg" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--nav end-->
+		<div id="content">
+			<div class="computer">
+				<div class="com_top">
+					<img src="images/book.png" class="book" />
+					<span class="title">家用电脑</span>
+					<span class="more"><a href="#">更多>></a></span>
+				</div>
+				<div class="slideBox2" id="slideBox2" >
+					<ul class="items">
+						<li><a href="#"><img src="images/com_banner.jpg" /></a></li>
+						<li><a href="#"><img src="images/com_banner2.jpg" /></a></li>
+						<li><a href="#"><img src="images/com_banner3.jpg" /></a></li>
+						<li><a href="#"><img src="images/com_banner4.jpg" /></a></li>
+						<li><a href="#"><img src="images/com_banner5.jpg" /></a></li>
+						<li><a href="#"><img src="images/com_banner6.jpg" /></a></li>
+					</ul>
+				</div>
+				<div class="com_Rcontent">
+					<a href="#">
+						<div class="htc">
+							<img src="images/htc.png" class="htc_img" />
+							<p class="p1">HTC渴望8系列</p>
+							<p class="p2"> 1899元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc">
+							<img src="images/htc.png" class="htc_img" />
+							<p class="p1">HTC渴望8系列</p>
+							<p class="p2"> 1899元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc">
+							<img src="images/htc.png" class="htc_img" />
+							<p class="p1">HTC渴望8系列</p>
+							<p class="p2"> 1899元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc" style="width: 205px;">
+							<img src="images/htc.png" class="htc_img" />
+							<p class="p1">HTC渴望8系列</p>
+							<p class="p2"> 1899元</p>
+						</div>
+					</a>
+					<div class="other">
+						<img src="images/sound.png" />
+						<span class="other_span1"><a href="#">NFC技术一碰轻松配对接触屏幕</a></span>
+						<p class="other_p"><em>￥</em>149.00</p>
+					</div>
+					<div class="other">
+						<img src="images/samsung.png" style="padding: 20px 20px 0 20px;" />
+						<span class="other_span1"><a href="#">Samsung三星G<br/>ALAXY Grand2</a></span>
+						<p class="other_p"><em>￥</em>2000.00</p>
+					</div>
+					<div class="other">
+						<img src="images/ipad.png" style="padding: 20px 20px 0 20px;" />
+						<span class="other_span1"><a href="#">全网低价 Apple<br/>苹果iPad mini1</a></span>
+						<p class="other_p"><em>￥</em>1888.00</p>
+					</div>
+					<div class="other" style="width: 205px;">
+						<img src="images/Mac.png" style="padding: 43px 8px 0 20px;" />
+						<span class="other_span1"><a href="#">Apple苹果 全新Retina屏MacBoo</a></span>
+						<p class="other_p"><em>￥</em>20020.00</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="computer">
+				<div class="com_top">
+					<img src="images/book.png" class="book" />
+					<span class="title">食品酒水</span>
+					<span class="more"><a href="#">更多>></a></span>
+				</div>
+				<div class="com_Lcontent" style="background: #53c7f8;">
+					<img src="images/S_banner.png" class="img1" />
+					<p class="p1">满99减20</p>
+					<p class="p2" >三月美食狂享购</p>
+					<p class="p3"><a href="#">了解详情
+							<img src="images/circle.png" style="vertical-align: middle; padding-left: 3px;" /></a>
+					</p>
+				</div>
+				<div class="com_Rcontent">
+					<a href="#">
+						<div class="htc">
+							<img src="images/snacks.png" class="htc_img" />
+							<p class="p1">三月美食狂享购</p>
+							<p class="p2"> 50元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc">
+							<img src="images/snacks.png" class="htc_img" />
+							<p class="p1">三月美食狂享购</p>
+							<p class="p2"> 40元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc">
+							<img src="images/snacks.png" class="htc_img" />
+							<p class="p1">三月美食狂享购</p>
+							<p class="p2"> 20元</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="htc" style="width: 205px;">
+							<img src="images/snacks.png" class="htc_img" />
+							<p class="p1">三月美食狂享购</p>
+							<p class="p2"> 80元</p>
+						</div>
+					</a>
+					<div class="other">
+						<img src="images/vitamin.png" style="padding-right: 25px; padding-top: 25px;" />
+						<span class="other_span1"><a href="#">康比特 维他保咀<br/>嚼片 60片</a></span>
+						<p class="other_p"><em>￥</em>600.00</p>
+					</div>
+					<div class="other">
+						<img src="images/vitamin.png" style="padding-right: 25px; padding-top: 25px;" />
+						<span class="other_span1"><a href="#">康比特 维他保咀<br/>嚼片 60片</a></span>
+						<p class="other_p"><em>￥</em>400.00</p>
+					</div>
+					<div class="other">
+						<img src="images/vitamin.png" style="padding-right: 25px; padding-top: 25px;" />
+						<span class="other_span1"><a href="#">康比特 维他保咀<br/>嚼片 60片</a></span>
+						<p class="other_p"><em>￥</em>200.00</p>
+					</div>
+					<div class="other" style="width: 205px;">
+						<img src="images/vitamin.png" style="padding-right: 25px; padding-top: 25px;" />
+						<span class="other_span1"><a href="#">康比特 维他保咀<br/>嚼片 60片</a></span>
+						<p class="other_p"><em>￥</em>100.00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content end-->
+		<div id="footer">
+			<p class="footer_p1"> 
+				<a href="#">咸鱼简介</a>|
+				<a href="#">咸鱼公告</a>| 
+				<a href="#">招纳贤士</a>| 
+				<a href="#">联系我们</a>|
+				客服热线：400-675-1234
+			</p>
+			<p class="footer_p2">Copyright © 2006 - 2014 咸鱼版权所有   京ICP备09037834号   京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</p>
+			<p class="footer_p3">
+				<img src="images/footer.png" style="padding-left: 65px;" />
+				<img src="images/footer.png" />
+				<img src="images/footer.png" />
+				<img src="images/footer.png" />
+			</p>
+		</div>
+		<!--footer end-->
+		<div style="clear: both;"></div>
+	</body>
+</html>

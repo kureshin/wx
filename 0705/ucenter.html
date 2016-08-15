@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>编辑资料</title>
+		
+	<link rel="stylesheet" type="text/css" href=""/>
+	<link rel="stylesheet" type="text/css" href="css/zui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/core.css"/>
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ucenter.js"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+		
+	</head>
+	<body>
+		<div id="nav_bar" class ="nav_bar">
+			<div id="container" class="container">
+				<nav class id="nav-bar-containter">
+				<a class="navbar-brand logo" href="#"><img  src="img/logobg.png" style="width: 106px;height: 40px;"/></a>
+				<div id="nar-bar-main">
+				<ul class="nav navbar-nav navbar-left">
+					<li class=""><a title="首页" href="index.html" target="_self">
+						<i class=" icon-home app-icon"></i>
+						<span style="color: #000000;">首页</span>
+						<span id=""></span>													
+					</a></li>
+					<li class=""><a title="社区" href="#" target="_self">
+						<i class="icon-group app-icon"></i>
+						<span style="color: #000000;">社区</span>
+						<span id=""></span>													
+					</a></li>
+					<li class=""><a title="论坛" href="#" target="_self">
+						<i class="icon-globe app-icon"></i>
+						<span style="color: #000000;">论坛</span>
+						<span id=""></span>													
+					</a></li>
+					<li class=""><a title="微博" href="#" target="_self">
+						<i class="icon-quote-left app-icon"></i>
+						<span style="color: #000000;">微博</span>
+						<span id=""></span>													
+					</a></li>
+					<li class=""><a title="会员" href="#" target="_self">
+						<i class="icon-github app-icon"></i>
+						<span style="color: #000000;">会员</span>
+						<span id=""></span>													
+					</a></li>
+										
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a title="聊天" href="#" target="_self"><i class="icon-chat-dot  app-icon"></i></a></li>
+					<!--<li><a title="登录" href="login.html" target="_blank">登录</a></li>
+					<li><a title="注册" href="register.html" target="_blank">注册</a></li>-->
+					<!--下面是登录成功之后的显示-->
+					<li class="dropdown"><a title="消息" href="#" target="_self"><i class="icon-bell  app-icon"></i></a>
+						<ul class="dropdown-menu extended notification">
+                            <li>
+                                <div class="clearfix header">
+                                    <div class="col-xs-6 nav_align_left"><span id="nav_hint_count">0</span> 条未读    </div>
+                                </div>
+                            </li>
+                            <li class="info-list">
+                                <div class="list-wrap">
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 350px;">
+                                    	<ul id="nav_message" class="dropdown-menu-list scroller  list-data" style="width: auto; overflow: hidden; height: 350px;">
+                                        <div style="font-size: 18px;color: #ccc;font-weight: normal;text-align: center;line-height: 150px">
+                                       	 暂无任何消息!   
+                                        </div>                                           
+                                    	</ul>
+                                    	<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 350px; background: rgb(0, 0, 0);"></div>
+                                    	<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="footer text-right">
+                                <div class="btn-group">
+                                    <button onclick="Notify.setAllReaded()" class="btn btn-sm  "><i class="icon-check"></i> 全部已读    </button>
+                                    <a class="btn  btn-sm  " href="#"> 查看消息  </a>                                       
+                                </div>
+                            </li>
+                        </ul>
+					</li>
+					<li><a title="设置" href="ucenter.html" target="_self"><i class="icon-cog  app-icon"></i></a></li>
+					<li class="top-spliter"></li>
+					<li class="dropdown"><a title="用户" href="#" target="_self" role="button" class="dropdown-toggle dropdown-toggle-avatar" data-toggle="dropdown">zizi<i class="icon-chevron-down  app-icon"></i></a>
+						<ul class="dropdown-menu text-left" role="menu">
+                                
+                                	<li><a style="color:" target="_self" href="myself.html"><span class="icon-"></span>&nbsp;&nbsp;个人主页 <span class="label label-badge rank-label" title="" style="background:  !important;color:white !important;"></span></a></li>
+                                    <li><a style="color:" target="_self" href="forun.html"><span class="icon-"></span>&nbsp;&nbsp;消息中心 <span class="label label-badge rank-label" title="" style="background:  !important;color:white !important;"></span></a></li>
+                                    <li><a style="color:" target="_self" href="self.html"><span class="icon-"></span>&nbsp;&nbsp;我的收藏 <span class="label label-badge rank-label" title="" style="background:  !important;color:white !important;"></span></a></li>
+                                    <li><a style="color:" target="_self" href="ucenter.html"><span class="icon-"></span>&nbsp;&nbsp;我的头衔 <span class="label label-badge rank-label" title="" style="background:  !important;color:white !important;"></span></a></li>                              
+                                    <li><a event-node="logout"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;注销</a></li>                               
+                        </ul>
+						
+					</li>
+					<li class="top-spliter"></li>
+				</ul>
+			</div>
+																
+			</nav>
+			</div>
+		</div>
+			<div id="tool" class="tool">
+				<a id="go-top" href="javascript:;" class="icon-weixin" style="display: block;font-size: 40px;opacity: 0.3;text-decoration: none;"></a>
+				<a id="go-top" href="javascript:;" class="icon-chevron-up  app-icon" style="display: block;font-size: 40px;opacity: 0.3;text-decoration: none;"></a>
+			</div>
+			<div id="main-container" class="container user-config" style="margin-top: 60px ;width: 960px;max-width: 960px;">
+	            <div class="row">
+	                <div class=" col-xs-3" style="width: 220px">
+	                    <div>
+	                        <div class="user-info-panel bg-primary text-center margin_bottom_10" style="background-color: #6fa7ce;">
+	                            <div>
+	                                <img class="avatar-img" src="img/IMG_0707.JPG" style="width: 128px;height: 128px;">
+	                            </div>
+	                            <div>
+	                                <a class="nickname" href="#">zizi</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div>
+	                        <nav class="menu"id="menu" data-toggle="menu">
+	                            <a class="btn btn-success btn-lg" href="myself.html"><i class="icon-user"></i> 个人主页</a>
+	                               		
+	                            <ul class="nav nav-primary side-menu">
+	                                <li id="info" class="active" style="background-color: #6fa7ce"><a href="#"><i class="icon-th"></i>资料设置</a></li>
+	                                    
+	                                <li id="tag"><a href="#"><i class="icon-tag"></i> 用户标签</a></li>
+	                                
+	                                <li id="avatar"><a href="#"><i class="icon-user"></i> 头像修改</a></li>
+	                                   
+	                                <li id="password"><a href="#"><i class="icon-lock"></i>密码修改</a></li>
+	                                    
+	                                <li id="score"><a href="#"><i class="icon-bar-chart"></i> 我的积分</a></li>
+	                               
+	                                <li id="other"><a href="#"><i class="icon-list-ul"></i> 其他</a></li>
+	                               
+	                            </ul>
+	                        </nav>                      
+	                    </div>
+	                </div>
+	                <div class="col-xs-9" >
+	                    <div id="usercenter-content-td ">
+	                        <div class="container-fluid common_block_border" style="min-height: 600px">							                            							
+								<div id="center">
+									<div id="center_base"style="display: block;">
+										<div>
+																	
+											<div id="center_account">
+											    <div class="row">
+											        <div class="col-xs-12">
+											            <ul class="nav nav-secondary">
+											                <li class="active"><a href="#base" data-toggle="tab">基本资料</a></li>
+											            </ul>
+				
+											        </div>
+											    </div>
+											    <div class="tab-content">
+											        <div class="tab-pane active" id="base">
+											            <div class="with-padding" style="padding: 20px">
+											                <div class="row">
+											                    <div class="col-xs-8 center_info form-horizontal">
+											                        <div class="form-group">
+											                        	<label for="aUsername" class="col-xs-2 control-label">用户名</label>							
+											                            	<div class="col-xs-10">
+				                                                                <span class="lh32">zizi</span>
+				                                                            </div>
+				                        							</div>                                               
+				                                            	</div>
+											                </div>
+											                <div class="row">
+											                    <div class="col-xs-8">
+											                        <form class="form-horizontal center_info ajax-form" role="form" action="#" method="post">
+											                            <div class="form-group">
+											                                <label for="nickname" class="col-xs-2 control-label">昵称</label>
+											
+											                                <div class="col-xs-10">
+											                                    <input type="text" class="form-control" id="nickname" name="nickname" value="zizi" placeholder="昵称">
+											                                </div>
+											                            </div>
+											                            <div class="form-group">
+											                                <label class="col-xs-2 control-label">性别</label>
+											
+											                                <div class="col-xs-10">
+											                                    <label class="radio-inline">
+											                                        <input name="sex" type="radio" value="1">男</label>
+											                                    <label class="radio-inline">
+											                                        <input name="sex" type="radio" value="2">女</label>
+											                                    <label class="radio-inline">
+											                                        <input name="sex" type="radio" value="0" checked="">保密 </label>
+											                                </div>
+											                            </div>
+											                            <div class="form-group position">
+											                                <label for="email" class="col-xs-2 control-label">所在地</label>
+											
+											                                <div class="col-xs-10">
+											                                    <select class="form-control" name="province" id="J_province"><option value="">-省份-</option><option value="110000">北京市</option><option value="120000">天津市</option><option value="130000">河北省</option><option value="140000">山西省</option><option value="150000">内蒙古</option><option value="210000">辽宁省</option><option value="220000">吉林省</option><option value="230000">黑龙江</option><option value="310000">上海市</option><option value="320000">江苏省</option><option value="330000">浙江省</option><option value="340000">安徽省</option><option value="350000">福建省</option><option value="360000">江西省</option><option value="370000">山东省</option><option value="410000">河南省</option><option value="420000">湖北省</option><option value="430000">湖南省</option><option value="440000">广东省</option><option value="450000">广西省</option><option value="460000">海南省</option><option value="500000">重庆市</option><option value="510000">四川省</option><option value="520000">贵州省</option><option value="530000">云南省</option><option value="540000">西　藏</option><option value="610000">陕西省</option><option value="620000">甘肃省</option><option value="630000">青海省</option><option value="640000">宁　夏</option><option value="650000">新　疆</option><option value="710000">台湾省</option><option value="810000">香　港</option><option value="820000">澳　门</option></select>
+																				<select class="form-control" name="city" id="J_city" style=""><option value="">-城市-</option></select>
+																				<select class="form-control" name="district" id="J_district" style=""><option value="">-州县-</option></select>
+																				<script type="text/javascript">
+																																				
+																				$(function(){
+																					var pid=0;  //默认省份id
+																					var cid=0;  //默认城市id
+																					var did=0;  //默认区县市id
+																				
+																				    
+																				function change_province(pid){
+																				        $.post("/opensns/os/index.php?s=/home/addons/execute/_addons/china_city/_controller/china_city/_action/getprovince.html", {pid: pid}, function(result){
+																				            $("#J_province").html(result);
+																				        });
+																				    }
+																				
+																				function change_city(p_pid,p_cid){
+																				    $.post('/opensns/os/index.php?s=/home/addons/execute/_addons/china_city/_controller/china_city/_action/getcity.html', {pid: p_pid, cid: p_cid}, function(result){
+																				        $("#J_city").show().html(result);
+																				    });
+																				
+																				}
+																				function change_district(p_cid,p_did){
+																				    $.post('/opensns/os/index.php?s=/home/addons/execute/_addons/china_city/_controller/china_city/_action/getdistrict.html', {cid: p_cid, did: p_did}, function(result){
+																				        $("#J_district").show().html(result);
+																				    });
+																				}
+																				
+																				    change_province(pid);
+																				    change_city(pid,cid);
+																				    change_district(cid,did);
+																				
+																				
+																					$('#J_province').change(function(){
+																						var pid_g=$(this).children('option:selected').val();
+																						change_city(pid_g)
+																				        change_district(0);
+																				
+																					});
+																				
+																					$('#J_city').change(function(){
+																						var cid_g=$(this).children('option:selected').val();
+																						change_district(cid_g)
+																				
+																				
+																					});
+																				
+																					$('#J_district').change(function(){
+																						var did_g=$(this).children('option:selected').val();
+																					});
+																				
+																				});
+																				
+																				</script>
+											                              	</div>
+											                            </div>
+											                            <div class="form-group">
+											                                <label for="signature" class="col-xs-2 control-label">个性签名</label>
+											
+											                                <div class="col-xs-10">
+											                                    <textarea id="signature" name="signature" class="form-control" style="width: 100%; height: 6em;resize: none"></textarea>
+											                                </div>
+											                            </div>
+											
+											                            <div class="form-group">
+											                                <div class="col-sm-offset-2 col-xs-10">
+											                                    <button type="submit" class="btn btn-primary">保存</button>
+											                                </div>
+											                            </div>
+											                        </form>
+											                    </div>							
+											                </div>
+											
+											
+											
+											            </div>
+											        </div>
+												
+												
+												</div>
+																		            																				
+											</div>
+											
+										</div>
+									
+									</div>		
+									<div id="center_base" class="with-padding" style="padding: 20px;display: none;">
+	    								<h2>选择个人标签</h2>
+	    								<div class="row">
+	    									<div class="col-xs-12">
+	                                            <div style="text-align: center;font-size: 22px;color: #B3B3B3;">
+						                            <p>
+						                                <br>
+						                                <span>没有可选标签～</span>
+						                                <br>
+						                            </p>
+						                        </div>                    
+						                        <div class="tag-select-block clearfix" >
+							                        <div class="select-cate">个人标签：</div>
+							                        <div class="select-option my-tag-block"style="margin-left: 100px">
+							                            <div data-role="my_tag_block"style="  border: 1px solid #dcdcdc;border-top-color: #b5b5b5;padding: 5px 5px 10px;background: #fff;max-width: 500px;height: 30px;">
+							                           	</div>
+							                            <div class="clearfix"></div>
+							                        </div>
+							                    </div>
+							                    <div class="tag-select-block clearfix">
+							                        <div class="select-option"style="margin-left: 100px;margin-top: 20px;">
+							                            <button class="btn btn-primary" data-role="set-tag">保存</button>
+							                        </div>
+							                    </div>
+					                		</div>
+	    								</div>
+	    							</div>
+	    							<div id="center_base" class="with-padding" style="padding: 20px;display: none;">
+										
+								    		<h2> 修改头像    </h2>
+								       																																    
+								    		<div class="row">
+								
+								        	<div class="ucenter-avatar col-xs-12">
+            
+								            <script type="text/javascript" charset="utf-8" src="/opensns/os/Public/js/ext/webuploader/js/webuploader.js"></script>
+											<link href="/opensns/os/Public/js/ext/webuploader/css/webuploader.css" type="text/css" rel="stylesheet">
+								
+										    <style>
+										        .jcrop-holder > div > div {
+										            border-radius: 100%;
+										        }
+										        .jcrop-holder img {
+										            max-width: none;
+										        }
+										        .jcrop-holder .avatar_select{margin-top: -10px;margin-left: -10px;}
+										    </style>
+
+											<div style="height: 600px;">
+											<div id="uploader-demo">
+											    <!--用来存放item-->
+											    <div id="fileList" class="uploader-list"></div>
+											    <div id="upload_avatar_102" style="padding: 20px 0" class="webuploader-container"style="position: relative;">
+											    	<div class="webuploader-pick">选择图片</div>
+												    <div id="rt_rt_1anh18uj7u2i1q0d1aajv9j190b1" style="position: absolute; top: 20px; left: 0px; width: 64px; height: 28px; overflow: hidden; bottom: auto; right: auto;">
+												    	<input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+												    	<label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+												    </div>
+											    </div>
+											
+											    <div class="show_avatar">							
+											        <div class="col-xs-4 avatar_select"style="padding: 10px;">
+											        	
+											            <div id="avatar_102_original">
+											                <img class="avatar-img" src="img/logo.png" style="width: 256px;height: 256px;">																						
+											            </div>
+											
+											            <div class="pull-left avatar_256 text-center avatar_select"  style=" display:block;position: absolute;width: 256px;height: 256px;padding-bottom: 49px;left: 300px;z-index: 99;top: 0;">
+											                <div class="" style="margin-bottom: 20px;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 256px;height: 256px;">											
+											                </div>
+											                <p>大尺寸头像</p>
+											                <p> 256*256</p>
+											            </div>
+											            
+											            <div class="pull-left avatar_128 text-center avatar_select" id="avatar_102_128" style="display:block;position: absolute;width: 128px;height: 128px;padding-bottom: 49px;left: 600px;z-index: 99;top: 0;">
+											                <div class="" style="margin-bottom: 20px;;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 128px;height: 128px">											
+											                </div>
+											                <p>中尺寸头像</p>
+											                <p> 128*128</p>																						
+											            </div>
+											            
+											            <div class="pull-left avatar_64 text-center avatar_select" id="avatar_102_64" style="padding: 10px 41px;display:block;position: absolute;top:230px;height: 64px;left: 600px;z-index: 99;">
+											                <div class="" style="margin-bottom: 20px;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 64px;height: 64px;">											
+											                </div>
+											                <p style="width: 66px;">小尺寸头像</p>
+											                <p>64*64</p>											
+											            </div>
+																																	
+											            <input class="btn btn-default avatar_btn" data-role="avatar_btn" type="button" value="保存头像"style="position:relative;left: 460px;top:126px">
+											        </div>																																	
+											    </div>
+											    
+											</div>
+											
+											<link rel="stylesheet" type="text/css" href="/opensns/os/Public/static/jcrop/jquery.Jcrop.css">
+											<script src="/opensns/os/Public/static/jcrop/jquery.Jcrop.js"></script>
+											<script src="/opensns/os/Public/static/browser/jquery.browser.js"></script>
+											
+											
+											<script>
+											    $(function () {
+											        var crop;
+											        var jcrop_api;
+											        var ext;
+											        var boundx, boundy,
+											                $preview = $('.avatar_256'),
+											                $preview_128 = $('.avatar_128'),
+											                $preview_64 = $('.avatar_64'),
+											                $pcnt = $('.avatar_256 div'),
+											                $pimg = $('.avatar_256 div img'),
+											                $pcnt_128 = $('.avatar_128 div'),
+											                $pimg_128 = $('.avatar_128 div img'),
+											                $pcnt_64 = $('.avatar_64 div'),
+											                $pimg_64 = $('.avatar_64 div img');
+											        var path;
+											        var uploader_102= WebUploader.create({
+											            // 选完文件后，是否自动上传。
+											            auto: true,
+											            // swf文件路径
+											            swf: 'Uploader.swf',
+											            // 文件接收服务端。
+											            server: "/opensns/os/index.php?s=/core/file/uploadavatar/uid/102.html",
+											            // 选择文件的按钮。可选。
+											            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+											            pick: '#upload_avatar_102',
+											            // 只允许选择图片文件。
+											            accept: {
+											                title: 'Images',
+											                extensions: 'gif,jpg,jpeg,bmp,png',
+											                mimeTypes: 'image/*'
+											            }
+											        });
+											        uploader_102.on('fileQueued', function (file) {
+											            uploader_102.upload();
+											            toast.showLoading();
+											        });
+											        /*上传成功*/
+											        uploader_102.on('uploadSuccess', function (file, ret) {
+											            toast.hideLoading();
+											            if (ret.status == 0) {
+											                toast.error(ret.info);
+											            } else {
+											               // $("#avatar_" + "102" + "_original img").attr('src', ret.data.file.path );
+											                ext = ret.data.file.ext;
+											                path = ret.data.file.path;
+											                var src = ret.data.file.src+'?time='+ret.data.file.time;
+											                $("#avatar_" + "102" + "_original").html('');
+											                $("#avatar_" + "102" + "_original").html('<img src="'+src+'">');
+											                $pimg.attr('src', src)
+											                $pimg_128.attr('src', src)
+											                $pimg_64.attr('src', src)
+											                $("#avatar_" + "102" + "_original img").load(function () {
+											                    $("#avatar_" + "102" + "_original >img").Jcrop({
+											                        aspectRatio: 1,
+											                        onChange: updateCoordinate,
+											                        onSelect: updateCoordinate,
+											                        minSize: [10, 10],
+											                        setSelect: [0, 0, 256, 256]
+											                    }, function () {
+											                        var bounds = this.getBounds();
+											                        boundx = bounds[0];
+											                        boundy = bounds[1];
+											                        jcrop_api = this;
+											                        $preview.appendTo(jcrop_api.ui.holder);
+											                        $preview_128.appendTo(jcrop_api.ui.holder);
+											                        $preview_64.appendTo(jcrop_api.ui.holder);
+											                        crop = jcrop_api.tellScaled();
+											                        updateCoordinate(crop);
+											                    });
+											                })
+											                //重置队列
+											                uploader_102.reset();
+											            }
+											        });
+											        function updateCoordinate(c) {
+											            crop = c;
+											            if (parseInt(c.w) > 0) {
+											                var xsize = $pcnt.width();
+											                var ysize = $pcnt.height();
+											                var rx = xsize / c.w ;
+											                var ry = ysize / c.h ;
+											                $pimg.css({
+											                    width: Math.round(rx * boundx) + 'px',
+											                    height: Math.round(ry * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry * c.y) + 'px'
+											                });
+											                var xsize_128 = $pcnt_128.width();
+											                var ysize_128 = $pcnt_128.height();
+											                var rx_128 = xsize_128 / c.w;
+											                var ry_128 = ysize_128 / c.h;
+											                $pimg_128.css({
+											                    width: Math.round(rx_128 * boundx) + 'px',
+											                    height: Math.round(ry_128 * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx_128 * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry_128 * c.y) + 'px'
+											                });
+											
+											                var xsize_64 = $pcnt_64.width() ;
+											                var ysize_64 = $pcnt_64.height() ;
+											                var rx_64 = xsize_64 / c.w;
+											                var ry_64 = ysize_64 / c.h;
+											                $pimg_64.css({
+											                    width: Math.round(rx_64 * boundx) + 'px',
+											                    height: Math.round(ry_64 * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx_64 * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry_64 * c.y) + 'px'
+											                });
+											
+											
+											            }
+											        }
+											
+											
+											
+											        $('[data-role=avatar_btn]').click(function(){
+											            //检查是否已经裁剪过
+											            if (typeof (crop) == 'undefined') {
+											                toast.error("请上传头像并裁剪");
+											                return;
+											            }
+											            else{
+											                var crop2 = crop.x / boundx + ',' + crop.y / boundy + ',' + crop.w / boundx + ',' + crop.h / boundy;
+											            }
+											            var uid ='102';
+											            //提交到服务器
+											            var url = "/opensns/os/index.php?s=/ucenter/member/saveavatar.html";
+											
+											            $.post(url, {uid: uid, crop: crop2,path:path}, function (res) {
+											                     handleAjax(res);
+											            });
+											
+											        })
+											    })
+											
+											
+											
+											</script>
+											
+											</div>          
+
+								        	</div>
+								    		
+								
+										</div>
+		
+									</div>
+									<div id="center_base" class="with-padding" style="padding: 20px;display: none;">
+									    <h2>  修改密码    </h2>									      
+									    <div class="row">
+									        <div class="col-xs-8">
+									            <form id="changePasswordForm" action="#" method="post" class="ajax-form form-horizontal">
+									                <div class="form-group">
+									                    <label for="inputOldPassword" class="col-xs-2 control-label">旧密码</label>									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputOldPassword" value="" name="old_password" placeholder="输入旧密码">
+									                    </div>
+									                </div>
+									
+									                <div class="form-group">
+									                    <label for="inputNewPassword" class="col-xs-2 control-label">新密码</label>
+									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputNewPassword" value="" name="new_password" placeholder="输入新密码">
+									                    </div>
+									                </div>
+									
+									                <div class="form-group">
+									                    <label for="inputConfirmPassword" class="col-xs-2 control-label">确认密码</label>
+									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputConfirmPassword" value="" name="confirm_password" placeholder="输入确认密码">
+									                    </div>
+									                </div>
+									                <div class="form-group">
+									                    <div class="col-sm-offset-2 col-xs-10">
+									                        <p class="text-danger" id="submitTip"></p>
+									                        <button type="submit" class="btn btn-primary">保存</button>
+									                    </div>
+									                </div>
+									            </form>
+									        </div>
+									    </div>
+									
+									
+									</div>
+									<div id="center_base"style="display: none;">
+							            <ul class="nav nav-secondary">
+							                <li class="active"><a href="#base" data-toggle="tab">我的积分</a></li>
+							                <li>
+							                    <a href="#level" data-toggle="tab">等级经验</a>
+							                </li>
+							                <li>
+							                    <a href="#rule" data-toggle="tab">积分获取规则</a>
+							                </li>
+							            </ul>
+							            <div class="tab-content">
+							                <div class="tab-pane active" id="base">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="col-xs-8">
+							                            <div class="panel">
+							                                <div class="panel-heading">现有积分</div>
+							                                <ul class="list-group">
+							                                    <li class="list-group-item">积分：10 分</li>
+							                                    <li class="list-group-item">威望：0 点</li>
+							                                    <li class="list-group-item">贡献：0 元</li>
+							                                    <li class="list-group-item">余额：0 点</li>                                </ul>
+							                            </div>
+							
+							                        </div>
+							
+							                    </div>
+							                </div>
+							                <div class="tab-pane" id="level">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="col-xs-8">
+							                            <div class="panel">
+							                                <div class="panel-heading">升级所需经验</div>
+							                                <ul class="list-group">
+							                                    <li class="list-group-item"><br>
+																	0:Lv1 实习<br>
+																	50:Lv2 试用<br>
+																	100:Lv3 转正<br>
+																	200:Lv4 助理<br>
+																	400:Lv5 经理<br>
+																	800:Lv6 董事<br>
+																	1600:Lv7 董事长<br>
+																</li>
+							                                </ul>
+							                           </div>							
+							                        </div>
+							                        <div class="col-xs-12">
+							                            <div>当前经验：10  </div>
+							                                                          
+							                            <div>当前等级：Lv1 实习</div>
+							                        </div>
+														
+							                    </div>
+							                </div>
+							                <div class="tab-pane" id="rule">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="panel">
+							                            <div class="panel-heading">系统</div>
+						                                <div class="list-group">
+						                                    <a class="list-group-item">
+						                                    	<h4 class="list-group-item-heading"><strong>用户登录：</strong></h4>							                                    	
+						                                        <p class="list-group-item-text"> 每次【积分】【+10】分  ，每【24】小时最多【1】次</p> 
+						                                    </a>     
+						                                </div>
+							                        </div>
+							                        <div class="panel">
+							                            <div class="panel-heading">微博</div>
+						                                <div class="list-group">
+						                                    <a class="list-group-item">
+						                                    	<h4 class="list-group-item-heading"><strong>发布微博    ：</strong></h4>
+						                                     <p class="list-group-item-text"> 每次【积分】【+1】分    ，每【24】小时最多【10】次</p>
+						                                    </a>
+						                                    <a class="list-group-item">
+						                                    <h4 class="list-group-item-heading"><strong>添加微博评论  ：</strong></h4>
+						                                    <p class="list-group-item-text">  每次【积分】【+1】分，每【24】小时最多【10】次</p>
+						                                    </a>                                
+						                                </div>
+						                            </div>
+							                    </div>
+							                </div>
+										</div>
+						            <div class="row"> </div>												           						
+						
+						        </div>
+						    		<div id="center_base" class="with-padding" style="padding: 20px;display: none;">
+							
+							            <h2>  其他设置            </h2>												              
+							            <div class="row">
+													
+							                <div class="with-padding">
+							                    <button data-role="cleanRemember" class="btn btn-large btn-block btn-primary" type="button">清除记住登录                    </button>
+							                    <link rel="stylesheet" type="text/css" href="#">
+							                </div>
+							
+							            </div>
+														
+							        </div>
+							   	
+								
+								
+								</div>
+								
+								
+							</div>
+	
+	
+	            		</div>
+	        		</div>
+	    			<div class="col-xs-9" style="display: none;">
+	    				<div class="usercenter-content-id">
+	    					<div class="container-fluid common-block-border" style="min-height: 600px;">
+	    						<div id="center">
+	    							<div id="center_base" class="with-padding" style="padding: 20px">
+	    								<h2>选择个人标签</h2>
+	    								<div class="row">
+	    									<div class="col-xs-12">
+	                                            <div style="text-align: center;font-size: 22px;color: #B3B3B3;">
+						                            <p>
+						                                <br>
+						                                <span>没有可选标签～</span>
+						                                <br>
+						                            </p>
+						                        </div>                    
+						                        <div class="tag-select-block clearfix" >
+							                        <div class="select-cate">个人标签：</div>
+							                        <div class="select-option my-tag-block"style="margin-left: 100px">
+							                            <div data-role="my_tag_block"style="  border: 1px solid #dcdcdc;border-top-color: #b5b5b5;padding: 5px 5px 10px;background: #fff;max-width: 500px;height: 30px;">
+							                           	</div>
+							                            <div class="clearfix"></div>
+							                        </div>
+							                    </div>
+							                    <div class="tag-select-block clearfix">
+							                        <div class="select-option"style="margin-left: 100px;margin-top: 20px;">
+							                            <button class="btn btn-primary" data-role="set-tag">保存</button>
+							                        </div>
+							                    </div>
+					                		</div>
+	    								</div>
+	    							</div>
+	    						
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	            	<div class="col-xs-9"style="display: none;">
+	            		<div id="usercenter-content-td ">
+                        	<div class="container-fluid common_block_border" style="min-height: 600px">                           
+								<div id="center">
+									<div id="center_base">
+										<div class="with-padding" style="padding: 20px">
+								    		<h2> 修改头像    </h2>
+								       																																    
+								    		<div class="row">
+								
+								        	<div class="ucenter-avatar col-xs-12">
+            
+								            <script type="text/javascript" charset="utf-8" src="/opensns/os/Public/js/ext/webuploader/js/webuploader.js"></script>
+											<link href="/opensns/os/Public/js/ext/webuploader/css/webuploader.css" type="text/css" rel="stylesheet">
+								
+										    <style>
+										        .jcrop-holder > div > div {
+										            border-radius: 100%;
+										        }
+										        .jcrop-holder img {
+										            max-width: none;
+										        }
+										        .jcrop-holder .avatar_select{margin-top: -10px;margin-left: -10px;}
+										    </style>
+
+											<div style="height: 600px;">
+											<div id="uploader-demo">
+											    <!--用来存放item-->
+											    <div id="fileList" class="uploader-list"></div>
+											    <div id="upload_avatar_102" style="padding: 20px 0" class="webuploader-container"style="position: relative;">
+											    	<div class="webuploader-pick">选择图片</div>
+												    <div id="rt_rt_1anh18uj7u2i1q0d1aajv9j190b1" style="position: absolute; top: 20px; left: 0px; width: 64px; height: 28px; overflow: hidden; bottom: auto; right: auto;">
+												    	<input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+												    	<label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+												    </div>
+											    </div>
+											
+											    <div class="show_avatar">							
+											        <div class="col-xs-4 avatar_select"style="padding: 10px;">
+											        	
+											            <div id="avatar_102_original">
+											                <img class="avatar-img" src="img/logo.png" style="width: 256px;height: 256px;">																						
+											            </div>
+											
+											            <div class="pull-left avatar_256 text-center avatar_select"  style=" display:block;position: absolute;width: 256px;height: 256px;padding-bottom: 49px;left: 300px;z-index: 99;top: 0;">
+											                <div class="" style="margin-bottom: 20px;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 256px;height: 256px;">											
+											                </div>
+											                <p>大尺寸头像</p>
+											                <p> 256*256</p>
+											            </div>
+											            
+											            <div class="pull-left avatar_128 text-center avatar_select" id="avatar_102_128" style="display:block;position: absolute;width: 128px;height: 128px;padding-bottom: 49px;left: 600px;z-index: 99;top: 0;">
+											                <div class="" style="margin-bottom: 20px;;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 128px;height: 128px">											
+											                </div>
+											                <p>中尺寸头像</p>
+											                <p> 128*128</p>																						
+											            </div>
+											            
+											            <div class="pull-left avatar_64 text-center avatar_select" id="avatar_102_64" style="padding: 10px 41px;display:block;position: absolute;top:230px;height: 64px;left: 600px;z-index: 99;">
+											                <div class="" style="margin-bottom: 20px;">
+											                    <img class="avatar-img" src="img/logo.png"style="width: 64px;height: 64px;">											
+											                </div>
+											                <p style="width: 66px;">小尺寸头像</p>
+											                <p>64*64</p>											
+											            </div>
+																																	
+											            <input class="btn btn-default avatar_btn" data-role="avatar_btn" type="button" value="保存头像"style="position:relative;left: 460px;top:126px">
+											        </div>																																	
+											    </div>
+											    
+											</div>
+											
+											<link rel="stylesheet" type="text/css" href="/opensns/os/Public/static/jcrop/jquery.Jcrop.css">
+											<script src="/opensns/os/Public/static/jcrop/jquery.Jcrop.js"></script>
+											<script src="/opensns/os/Public/static/browser/jquery.browser.js"></script>
+											
+											
+											<script>
+											    $(function () {
+											        var crop;
+											        var jcrop_api;
+											        var ext;
+											        var boundx, boundy,
+											                $preview = $('.avatar_256'),
+											                $preview_128 = $('.avatar_128'),
+											                $preview_64 = $('.avatar_64'),
+											                $pcnt = $('.avatar_256 div'),
+											                $pimg = $('.avatar_256 div img'),
+											                $pcnt_128 = $('.avatar_128 div'),
+											                $pimg_128 = $('.avatar_128 div img'),
+											                $pcnt_64 = $('.avatar_64 div'),
+											                $pimg_64 = $('.avatar_64 div img');
+											        var path;
+											        var uploader_102= WebUploader.create({
+											            // 选完文件后，是否自动上传。
+											            auto: true,
+											            // swf文件路径
+											            swf: 'Uploader.swf',
+											            // 文件接收服务端。
+											            server: "/opensns/os/index.php?s=/core/file/uploadavatar/uid/102.html",
+											            // 选择文件的按钮。可选。
+											            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+											            pick: '#upload_avatar_102',
+											            // 只允许选择图片文件。
+											            accept: {
+											                title: 'Images',
+											                extensions: 'gif,jpg,jpeg,bmp,png',
+											                mimeTypes: 'image/*'
+											            }
+											        });
+											        uploader_102.on('fileQueued', function (file) {
+											            uploader_102.upload();
+											            toast.showLoading();
+											        });
+											        /*上传成功*/
+											        uploader_102.on('uploadSuccess', function (file, ret) {
+											            toast.hideLoading();
+											            if (ret.status == 0) {
+											                toast.error(ret.info);
+											            } else {
+											               // $("#avatar_" + "102" + "_original img").attr('src', ret.data.file.path );
+											                ext = ret.data.file.ext;
+											                path = ret.data.file.path;
+											                var src = ret.data.file.src+'?time='+ret.data.file.time;
+											                $("#avatar_" + "102" + "_original").html('');
+											                $("#avatar_" + "102" + "_original").html('<img src="'+src+'">');
+											                $pimg.attr('src', src)
+											                $pimg_128.attr('src', src)
+											                $pimg_64.attr('src', src)
+											                $("#avatar_" + "102" + "_original img").load(function () {
+											                    $("#avatar_" + "102" + "_original >img").Jcrop({
+											                        aspectRatio: 1,
+											                        onChange: updateCoordinate,
+											                        onSelect: updateCoordinate,
+											                        minSize: [10, 10],
+											                        setSelect: [0, 0, 256, 256]
+											                    }, function () {
+											                        var bounds = this.getBounds();
+											                        boundx = bounds[0];
+											                        boundy = bounds[1];
+											                        jcrop_api = this;
+											                        $preview.appendTo(jcrop_api.ui.holder);
+											                        $preview_128.appendTo(jcrop_api.ui.holder);
+											                        $preview_64.appendTo(jcrop_api.ui.holder);
+											                        crop = jcrop_api.tellScaled();
+											                        updateCoordinate(crop);
+											                    });
+											                })
+											                //重置队列
+											                uploader_102.reset();
+											            }
+											        });
+											        function updateCoordinate(c) {
+											            crop = c;
+											            if (parseInt(c.w) > 0) {
+											                var xsize = $pcnt.width();
+											                var ysize = $pcnt.height();
+											                var rx = xsize / c.w ;
+											                var ry = ysize / c.h ;
+											                $pimg.css({
+											                    width: Math.round(rx * boundx) + 'px',
+											                    height: Math.round(ry * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry * c.y) + 'px'
+											                });
+											                var xsize_128 = $pcnt_128.width();
+											                var ysize_128 = $pcnt_128.height();
+											                var rx_128 = xsize_128 / c.w;
+											                var ry_128 = ysize_128 / c.h;
+											                $pimg_128.css({
+											                    width: Math.round(rx_128 * boundx) + 'px',
+											                    height: Math.round(ry_128 * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx_128 * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry_128 * c.y) + 'px'
+											                });
+											
+											                var xsize_64 = $pcnt_64.width() ;
+											                var ysize_64 = $pcnt_64.height() ;
+											                var rx_64 = xsize_64 / c.w;
+											                var ry_64 = ysize_64 / c.h;
+											                $pimg_64.css({
+											                    width: Math.round(rx_64 * boundx) + 'px',
+											                    height: Math.round(ry_64 * boundy) + 'px',
+											                    marginLeft: '-' + Math.round(rx_64 * c.x) + 'px',
+											                    marginTop: '-' + Math.round(ry_64 * c.y) + 'px'
+											                });
+											
+											
+											            }
+											        }
+											
+											
+											
+											        $('[data-role=avatar_btn]').click(function(){
+											            //检查是否已经裁剪过
+											            if (typeof (crop) == 'undefined') {
+											                toast.error("请上传头像并裁剪");
+											                return;
+											            }
+											            else{
+											                var crop2 = crop.x / boundx + ',' + crop.y / boundy + ',' + crop.w / boundx + ',' + crop.h / boundy;
+											            }
+											            var uid ='102';
+											            //提交到服务器
+											            var url = "/opensns/os/index.php?s=/ucenter/member/saveavatar.html";
+											
+											            $.post(url, {uid: uid, crop: crop2,path:path}, function (res) {
+											                     handleAjax(res);
+											            });
+											
+											        })
+											    })
+											
+											
+											
+											</script>
+											
+											</div>          
+
+								        	</div>
+								    		</div>
+								
+										</div>
+		
+									</div>
+								
+								</div>
+
+
+	                        </div>
+	                    </div>
+	            	</div>
+	            	<div class="col-xs-9"style="display: none;">
+	            		<!--<div class="usercenter">-->
+	            			<div id="usercenter-content-td ">
+                        		<div class="container-fluid common_block_border" style="min-height: 600px">                            
+									<div id="center">
+									<div id="center_base" class="with-padding" style="padding: 20px">
+									    <h2>  修改密码    </h2>									      
+									    <div class="row">
+									        <div class="col-xs-8">
+									            <form id="changePasswordForm" action="#" method="post" class="ajax-form form-horizontal">
+									                <div class="form-group">
+									                    <label for="inputOldPassword" class="col-xs-2 control-label">旧密码</label>									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputOldPassword" value="" name="old_password" placeholder="输入旧密码">
+									                    </div>
+									                </div>
+									
+									                <div class="form-group">
+									                    <label for="inputNewPassword" class="col-xs-2 control-label">新密码</label>
+									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputNewPassword" value="" name="new_password" placeholder="输入新密码">
+									                    </div>
+									                </div>
+									
+									                <div class="form-group">
+									                    <label for="inputConfirmPassword" class="col-xs-2 control-label">确认密码</label>
+									
+									                    <div class="col-xs-10">
+									                        <input type="password" class="form-control" id="inputConfirmPassword" value="" name="confirm_password" placeholder="输入确认密码">
+									                    </div>
+									                </div>
+									                <div class="form-group">
+									                    <div class="col-sm-offset-2 col-xs-10">
+									                        <p class="text-danger" id="submitTip"></p>
+									                        <button type="submit" class="btn btn-primary">保存</button>
+									                    </div>
+									                </div>
+									            </form>
+									        </div>
+									    </div>
+									
+									
+									</div>
+									
+									</div>
+
+
+		                        </div>
+		                    </div>
+	            		<!--</div>-->
+	            	</div>
+	            	<div class="col-xs-9"style="display: none;">
+	            		<div id="usercenter-content-td ">
+                        	<div class="container-fluid common_block_border" style="min-height: 600px">                            
+							    <div id="center">
+							        <div id="center_base">
+							            <ul class="nav nav-secondary">
+							                <li class="active"><a href="#base" data-toggle="tab">我的积分</a></li>
+							                <li>
+							                    <a href="#level" data-toggle="tab">等级经验</a>
+							                </li>
+							                <li>
+							                    <a href="#rule" data-toggle="tab">积分获取规则</a>
+							                </li>
+							            </ul>
+							            <div class="tab-content">
+							                <div class="tab-pane active" id="base">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="col-xs-8">
+							                            <div class="panel">
+							                                <div class="panel-heading">现有积分</div>
+							                                <ul class="list-group">
+							                                    <li class="list-group-item">积分：10 分</li>
+							                                    <li class="list-group-item">威望：0 点</li>
+							                                    <li class="list-group-item">贡献：0 元</li>
+							                                    <li class="list-group-item">余额：0 点</li>                                </ul>
+							                            </div>
+							
+							                        </div>
+							
+							                    </div>
+							                </div>
+							                <div class="tab-pane" id="level">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="col-xs-8">
+							                            <div class="panel">
+							                                <div class="panel-heading">升级所需经验</div>
+							                                <ul class="list-group">
+							                                    <li class="list-group-item"><br>
+																	0:Lv1 实习<br>
+																	50:Lv2 试用<br>
+																	100:Lv3 转正<br>
+																	200:Lv4 助理<br>
+																	400:Lv5 经理<br>
+																	800:Lv6 董事<br>
+																	1600:Lv7 董事长<br>
+																</li>
+							                                </ul>
+							                           </div>							
+							                        </div>
+							                        <div class="col-xs-12">
+							                            <div>当前经验：10  </div>
+							                                                          
+							                            <div>当前等级：Lv1 实习</div>
+							                        </div>
+														
+							                    </div>
+							                </div>
+							                <div class="tab-pane" id="rule">
+							                    <div class="with-padding" style="padding: 20px">
+							                        <div class="panel">
+							                            <div class="panel-heading">系统</div>
+						                                <div class="list-group">
+						                                    <a class="list-group-item">
+						                                    	<h4 class="list-group-item-heading"><strong>用户登录：</strong></h4>							                                    	
+						                                        <p class="list-group-item-text"> 每次【积分】【+10】分  ，每【24】小时最多【1】次</p> 
+						                                    </a>     
+						                                </div>
+							                        </div>
+							                        <div class="panel">
+							                            <div class="panel-heading">微博</div>
+						                                <div class="list-group">
+						                                    <a class="list-group-item">
+						                                    	<h4 class="list-group-item-heading"><strong>发布微博    ：</strong></h4>
+						                                     <p class="list-group-item-text"> 每次【积分】【+1】分    ，每【24】小时最多【10】次</p>
+						                                    </a>
+						                                    <a class="list-group-item">
+						                                    <h4 class="list-group-item-heading"><strong>添加微博评论  ：</strong></h4>
+						                                    <p class="list-group-item-text">  每次【积分】【+1】分，每【24】小时最多【10】次</p>
+						                                    </a>                                
+						                                </div>
+						                            </div>
+							                    </div>
+							                </div>
+										</div>
+						            <div class="row"> </div>												           						
+						
+						        </div>
+						    	
+							    /div>
+
+
+	                        </div>
+	                    </div>
+	            	</div>
+	            	<div class="col-xs-9"style="display: none;">
+	            		<div id="usercenter-content-td ">
+                        	<div class="container-fluid common_block_border" style="min-height: 600px">
+                            
+							    <div id="center">
+							        <div id="center_base" class="with-padding" style="padding: 20px">
+							
+							            <h2>  其他设置            </h2>												              
+							            <div class="row">
+													
+							                <div class="with-padding">
+							                    <button data-role="cleanRemember" class="btn btn-large btn-block btn-primary" type="button">清除记住登录                    </button>
+							                    <link rel="stylesheet" type="text/css" href="#">
+							                </div>
+							
+							            </div>
+														
+							        </div>
+							   
+							    </div>
+	
+	
+	                        </div>
+	                    </div>
+	            	</div>
+	            	
+	            </div>
+	            
+    			<div class="clearfix"></div>
+    			
+			</div>
+
+
+		</div>
+		
+		
+		<div id="footer-bar" class="footer-bar">
+			<div id="container" class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<h2><i class="icon-location-arrow"></i>&nbsp;&nbsp;关于我们</h2>
+						<p></p>
+						<p>&nbsp;关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们们关于我们关于我们关于我们关于我们</p>
+						<p></p>
+					</div>
+					<div class="col-xs-4">
+						<h2><i class="icon-star-empty"></i>&nbsp;&nbsp;关注我们</h2>
+						<p></p>
+						<p>业务推广：12345678</p>
+						<p>地址详情：xxx省xxx市xxx区xxxxxxxxxxxxxxx</p>
+						<p>联系电话：888-88888888</p>
+						<p></p>
+					</div>
+					<div class="col-xs-4">
+						<h2><i class="icon-link"></i>&nbsp;&nbsp;友情链接</h2>
+						<p><img style="width: 100px;height: 100px;" src="img/qrcode.png"/></p>
+						<p></p>
+					</div>
+				</div>
+				<div class="row text-center">
+					<hr />
+					<h4> <p>Copyright ©2013-2016<a href="#" target="_blank">ThinkPoint</a> </p></h4>
+					<div class="col-xs-12">
+						备案号：<a href="#" target="_blank"> 沪ICP备8812007XXX号</a>
+					</div>
+					<div class="col-xs-12">
+						www.<a href="#" target="_blank">ThinkPoint.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

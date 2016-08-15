@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>注册</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/register.js" ></script>
+</head>
+<body>
+<div class="top_div">
+<div class="register_page">
+    <div style="width: 165px;height: 96px;position: absolute">
+        <div class="tou"></div>
+        <div id="left_hand2" class="initial_left_hand"></div>
+        <div id="right_hand2" class="initial_right_hand"></div>
+    </div>
+<form method="post" action="{:U('User/doRegister')}" id="register_form">
+    <p style="padding: 30px 0px 10px 0px;position: relative;">
+        <span class="u_logo"></span>
+        <input class="ipt" type="text" placeholder="请输入用户名或邮箱" id="uname" name="uname">
+    </p>
+    <p style="padding: 0px 0px 10px 0px;position: relative;">
+        <span class="p_logo"></span>
+        <input id="pwd1" class="ipt" type="password"  placeholder="请输入密码" name="password">
+    </p>
+    <p style="position: relative;">
+        <span class="p_logo"></span>
+        <input id="pwd_again" class="ipt" type="password"  placeholder="再次输入密码" name="pwd_again">
+    </p>
+    <div class="err_info" id="register_err"></div>
+    <div style="height: 50px;line-height: 50px;padding-top:5px;border-top: 1px solid #e7e7e7;">
+        <p style="margin: 0px 35px 20px 45px;">
+           <span style="float: left;margin-left: 25px;">
+           	<a href="javascript:history.back(-1);" class="btn_return">取消</a>
+           </span>
+           <span style="float: right;margin-right: 30px;">
+               <a href="#" class="btn_ok">注册</a>
+           </span>
+        </p>
+    </div>
+</form>
+</div>
+</div>
+<div style="position: fixed;bottom: 0px;text-align: center;width: 100%;">
+    Copyright ©2016 <a style="margin-left: 10px;color: #000000;text-decoration: underline" href="#">ThinkPoint</a>
+</div>
+</body>
+</html>

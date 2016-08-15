@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+        	*{
+        		margin: 0 auto;
+        		padding: 0;
+        	}
+        	body{
+        		background-color: #EA474E;
+        	}
+        	#start_page, #play_page{
+        		width: 500px;
+        		height: 600px;
+        		text-align: center;
+        	}
+        	#play_page{
+        		display: none;
+        	}
+			#start_page h2{
+				color: #fff;
+				margin: 30px auto;
+			}
+			#start_page h4{
+				color: #ccc;
+				
+			}
+			#start_page .btn_field{
+				width: 350px;
+				height: 100px;
+				margin-top: 350px;
+			}
+			.btn{
+				display: block;
+				text-decoration: none;
+				background-color: #4DADF4;
+				width: 180px;
+				height: 45px;
+				border-radius: 8px;
+				color: #fff;
+				text-align: center;
+				line-height: 45px;
+				font-size: 16px;
+				font-weight:bold ;
+				margin: 15px auto;
+			}
+			.btn:hover{
+				background-color: #3c9ce3;
+			}
+			#play_page .info{
+				position: relative;
+				height: 35px;
+				line-height: 35px;
+				color: #fff;
+				top: 60px;
+			}
+			#play_page #box{
+				width: 400px;
+				height: 400px;
+				margin: 70px auto;
+				background-color: #ddd;
+				border-radius: 10px;
+				border: 10px solid #ddd;
+				box-shadow: 2px 2px 1px #CCCCCC;
+				cursor: pointer;
+			}
+			#play_page #box span{
+				display: block;
+				float: left;
+				border: 5px solid #ddd;
+				border-radius: 10px;
+				box-sizing: border-box;
+/*				background-color: red;*/
+			}
+			#box.lv2 span{
+				width: 50%;
+				height: 50%;
+			}
+			#box.lv3 span{
+				width: 33.333333%;
+				height: 33.333333%;
+			}
+			#box.lv4 span{
+				width: 25%;
+				height: 25%;
+			}
+			#box.lv5 span{
+				width: 20%;
+				height: 20%;
+			}
+			#box.lv6 span{
+				width: 16.666666%;
+				height: 16.666666%;
+			}
+			#box.lv7 span{
+				width: 14.28571428%;
+				height: 14.28571428%;
+			}
+			#box.lv8 span{
+				width: 12.5%;
+				height: 12.5%;
+			}
+			#box.lv9 span{
+				width: 11.111111%;
+				height: 11.111111%;
+			}
+			#result_page{
+        		width: 400px;
+        		height: 270px;
+        		background-color: #f7f7f7;
+        		box-shadow: 2px 2px #ccc;
+        		padding-top: 40px;
+        		text-align: center;
+        		margin-top:-350px;
+        		display: none;
+        	}
+			#result_page h1{
+				color: #EA7B09;
+			}
+			#result_page div{
+				margin:30px auto;
+				font-size: 16px;
+			}
+			#result_page .score{
+				font-size: 22px;
+				font-weight:bold;
+			}
+			#result_page #btn_again{
+				position: relative;
+				top: 40px;
+			}
+        </style>
+    </head>
+    <body>
+    	<!--开始页面-->
+    	<div id="start_page">
+    		<h2>找茬</h2>
+    		<h4>考考你的眼力,看看你是不是最厉害的</h4>
+    		<div class="btn_field">
+    			<a href="javascript:void(0);" id="btn_start" class="btn">开 始</a>
+    			<a href="javascript:void(0);" id="btn_more" class="btn">更 多 游 戏</a>
+    		</div>
+    	</div>
+    	<!--游戏界面-->
+    	<div id="play_page">
+    		<div class="info">
+    			剩余时间:<span id="time">60</span>
+    		</div>
+    		<div id="box" class="">
+    			<!--<span></span>
+    			<span></span>
+    			<span></span>
+    			<span></span>-->
+    		</div>
+    		<a href="javascript:void(0);" id="btn_pause" class="btn">暂 停</a>
+    	</div>
+    	<!--结果页面-->
+    	<div id="result_page">
+    		<h1>Game Over</h1>
+    		<div>得分：<span class="score">0</span></div>
+    		<a href="javascript:void(0);" id="btn_again" class="btn">再来一轮</a>
+    	</div>
+    </body>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/cellcolor.js"></script>
+<!--    <script type="text/javascript" src="js/cell.js"></script>-->
+</html>
